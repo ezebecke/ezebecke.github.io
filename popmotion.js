@@ -21,4 +21,22 @@ pointer(ballXY.get()).start(ballXY);
 listen(document, 'mouseup touchend').start(function () {
 ballXY.stop();
 });
+//Footer box
+var ballFooter = document.querySelector('.boxFooter');
+var divStylerF = styler(ballFooter);
+var ballFooterXY = value({ x: 0, y: 0 }, divStylerF.set);
+
+
+listen(ballFooter, 'mousedown touchstart').start(function (e) {
+e.preventDefault();
+pointer(ballFooterXY.get()).start(ballFooterXY);
+});
+
+listen(document, 'mouseup touchend').start(function () {
+ballFooterXY.stop();
+});
+
+
+
+
 }
