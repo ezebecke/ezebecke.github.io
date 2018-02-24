@@ -65,7 +65,6 @@ figure {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-  -webkit-box-sizing: content-box;
   box-sizing: content-box;
   /* 1 */
   height: 0;
@@ -94,7 +93,6 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
-  -webkit-text-decoration: underline dotted;
   text-decoration: underline dotted;
   /* 2 */ }
 
@@ -228,7 +226,6 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   /* 1 */
   color: inherit;
@@ -264,7 +261,6 @@ textarea {
  */
 [type="checkbox"],
 [type="radio"] {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   /* 1 */
   padding: 0;
@@ -386,11 +382,7 @@ h2 {
   left: 3em;
   background: transparent;
   border: 0;
-  -webkit-transition: -webkit-transform ease-in-out 250ms;
-  transition: -webkit-transform ease-in-out 250ms;
-  -o-transition: transform ease-in-out 250ms;
   transition: transform ease-in-out 250ms;
-  transition: transform ease-in-out 250ms, -webkit-transform ease-in-out 250ms;
   cursor: pointer;
   outline: none; }
 
@@ -401,27 +393,12 @@ nav {
   left: 0;
   right: 20%;
   z-index: 10;
-  -webkit-transform: translateX(-100%);
-  -ms-transform: translateX(-100%);
   transform: translateX(-100%);
-  -webkit-transition: -webkit-transform ease-out 250ms;
-  transition: -webkit-transform ease-out 250ms;
-  -o-transition: transform ease-out 250ms;
-  transition: transform ease-out 250ms;
-  transition: transform ease-out 250ms, -webkit-transform ease-out 250ms; }
+  transition: transform ease-out 250ms; }
 
 nav li, nav a {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
   height: 100%;
   width: 100%; }
@@ -430,22 +407,10 @@ nav ul {
   margin: 0;
   padding: 0;
   list-style: none;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
   height: 100vh;
-  -webkit-justify-content: space-around;
-  -ms-flex-pack: distribute;
   justify-content: space-around;
-  -webkit-box-align: stretch;
-  -webkit-align-items: stretch;
-  -ms-flex-align: stretch;
   align-items: stretch;
   background: #03AFC2; }
 
@@ -470,52 +435,30 @@ nav a {
 .close-icon {
   display: none; }
 
-.nav-is-open nav {
-  -webkit-transform: translateX(0);
-  -ms-transform: translateX(0);
-  transform: translateX(0); }
-
-.nav-is-open .container-all {
-  -webkit-transform: translateX(80%);
-  -ms-transform: translateX(80%);
-  transform: translateX(80%); }
-
-.nav-is-open .hamburger {
-  display: none; }
-
-.nav-is-open .close-icon {
-  display: block; }
-
-.nav-is-open .menu-button {
-  -webkit-transform: translateX(-70%);
-  -ms-transform: translateX(-70%);
-  transform: translateX(-70%); }
+.nav-is-open {
+  height: 100vh;
+  overflow-y: hidden; }
+  .nav-is-open nav {
+    transform: translateX(0); }
+  .nav-is-open .container-all {
+    transform: translateX(80%); }
+  .nav-is-open .hamburger {
+    display: none; }
+  .nav-is-open .close-icon {
+    display: block; }
+  .nav-is-open .menu-button {
+    transform: translateX(-70%); }
 
 .container-all {
-  -webkit-transition: -webkit-transform ease-out 250ms;
-  transition: -webkit-transform ease-out 250ms;
-  -o-transition: transform ease-out 250ms;
-  transition: transform ease-out 250ms;
-  transition: transform ease-out 250ms, -webkit-transform ease-out 250ms; }
-
-
+  transition: transform ease-out 250ms; }
 
 .welcome {
   background-image: url(../img/header-bg.png);
   background-size: cover;
   background-position: center;
   height: 100vh;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
   position: relative; }
   .welcome h1 {
@@ -551,9 +494,6 @@ nav a {
       margin: 2em auto 0; }
 
 .intro {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   color: rgba(255, 255, 255, 0.7); }
   .intro h2 {
@@ -574,23 +514,12 @@ nav a {
   background: #223843;
   padding: 2.5em 5vw;
   text-align: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center; }
 
 .intro-left img,
 .intro-right img {
-  -o-object-fit: cover;
   object-fit: cover;
   min-height: 100%;
   min-width: 100%;
@@ -608,7 +537,8 @@ nav a {
     clear: both; }
 
 .about-img {
-  max-height: 25em; }
+  max-height: 25em;
+  border-radius: 50%; }
   @media (min-width: 42em) {
     .about-img {
       float: left;
@@ -634,8 +564,6 @@ nav a {
   .about-title {
     grid-column: name / port;
     grid-row: 1 / 2;
-    -webkit-align-self: end;
-    -ms-flex-item-align: end;
     align-self: end; }
   .about-subtitle,
   .about-text {
@@ -643,7 +571,7 @@ nav a {
     @media (min-width: 50em) {
       .about-subtitle,
       .about-text {
-        grid-column: image-end / port-end; } }
+        grid-column: img-end / port-end; } }
   .about-subtitle {
     grid-row: 2 / 3; }
   .about-text {
@@ -655,12 +583,7 @@ nav a {
   padding: 5em 0; }
 
 .portfolio-items {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   width: 90%;
   margin: 0 auto;
@@ -669,9 +592,6 @@ nav a {
 .portfolio-item {
   position: relative;
   overflow: hidden;
-  -webkit-box-flex: 1;
-  -webkit-flex: 1 1 20rem;
-  -ms-flex: 1 1 20rem;
   flex: 1 1 20rem; }
   .portfolio-item .portfolio-image {
     display: block;
@@ -686,17 +606,8 @@ nav a {
     background: rgba(3, 175, 194, 0.75);
     color: #FFFFFF;
     text-align: left;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-transition: top ease-in-out 250ms;
-    -o-transition: top ease-in-out 250ms;
     transition: top ease-in-out 250ms; }
   .portfolio-item:hover figcaption,
   .portfolio-item:focus figcaption {
@@ -716,8 +627,6 @@ nav a {
   font-size: 1.1rem;
   text-decoration: none;
   border-bottom: 3px solid #FFFFFF;
-  -webkit-align-self: flex-start;
-  -ms-flex-item-align: start;
   align-self: flex-start; }
   .portfolio-link::after {
     content: url(../img/arrow-white.svg);
@@ -845,14 +754,7 @@ nav a {
     text-align: center; }
 
 form {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column; }
   @supports (display: grid) {
     @media (min-width: 50em) {
@@ -860,9 +762,7 @@ form {
         display: grid;
         grid-template-columns: 50% 50%;
         grid-column-gap: 1em;
-
-        grid-template-areas: "name     email" "message message" "   .      button"; }
-
+        grid-template-areas: "name     email" "message  message" ".        button"; }
         form .name {
           grid-area: name; }
         form .email {
@@ -881,7 +781,6 @@ label {
 
 input,
 textarea {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   display: block;
   padding: .75em;
@@ -921,13 +820,7 @@ footer {
   width: 90%;
   margin: 0 auto;
   max-width: 15em;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   margin: 1.75em auto 4em; }
 
