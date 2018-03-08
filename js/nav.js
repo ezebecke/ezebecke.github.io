@@ -1,5 +1,4 @@
 /*
-
 const navToggle = document.querySelector('.menu-button')
 const nav = document.querySelector('nav')
 const containerAll = document.querySelector('.container-all')
@@ -15,7 +14,7 @@ navToggle.addEventListener('click', _ => {
 nav.addEventListener('click', _ => {
   containerAllStyle.transition = '0ms'
   bodyClassList.remove('nav-is-open')
-})*/
-
+})
+*/
 
 

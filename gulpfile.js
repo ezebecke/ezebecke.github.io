@@ -1,5 +1,3 @@
-//Using gulp to compile sass and browser sync feature
-//We can also use it to minify css, opt img, etc
 const gulp = require('gulp'),
 browserSync = require('browser-sync').create(),
 sass = require('gulp-sass');
