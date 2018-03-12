@@ -1,3 +1,4 @@
+
 .portfolio {
   text-align: center;
   background: $light-gray;
@@ -5,8 +6,9 @@
 }
 
 .portfolio-items {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid; //flex
+  //flex-wrap: wrap;
+  height: 100%; //
   @include container($max-width: 75em);
 }
 
@@ -71,33 +73,47 @@
 @supports (display: grid) {
   .portfolio-items {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(5, 1fr); //5 1
 
     @include mq {
-      grid-template-columns: repeat(3, 1fr); // (4, 1fr)
+      grid-template-columns: repeat(5, 1fr); // 5, 1
+      grid-template-rows: repeat(1, 1fr);
     }
   }
-  
-  .portfolio-item.featured {
-    grid-column: 1 / span 2;
-    grid-row: 1; // span 2
-  }
 
-  .portfolio-item.vertical {
-    grid-column: 3 / 4;
-    grid-row: 1 / 3;
+  .portfolio-item.large {
+    grid-column: span 3;
+   
   }
-
-  .featured{
+  .large{
     .portfolio-title {
       font-size: 5rem;
     }
   
-    
     .portfolio-desc {
       display: block;
-    }
+    } 
   }
+
+  .portfolio-item.square {
+    grid-column: span 2;
+   
+  }
+  .square{
+    .portfolio-title {
+      font-size: 5rem;
+      
+    }
+  
+    .portfolio-desc {
+      display: block;
+    } 
+  }
+}
+
+.back {
+  background-image: url(../img/news.png);
+  background-size: cover;
 }
 
 .portfolio-modal {
