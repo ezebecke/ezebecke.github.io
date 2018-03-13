@@ -367,7 +367,7 @@ h1 {
 h2 {
   font-size: 2rem;
   letter-spacing: 0.15em;
-  color: #621B00;
+  color: #621b00;
   text-transform: uppercase;
   line-height: 1;
   font-family: "Six Caps", sans-serif;
@@ -706,7 +706,7 @@ form {
 label {
   display: block;
   margin-top: 1em;
-  color: #621B00; }
+  color: #621b00; }
 
 input,
 textarea {
@@ -769,7 +769,10 @@ footer {
 .topnav {
   background-color: #333;
   overflow: hidden;
-  text-align: center; }
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  box-shadow: 0px 0px 3px 1px rgba(52, 35, 13, 0.102), 0px 1px 11px 1px rgba(148, 86, 0, 0.329); }
 
 /* Style the links inside the navigation bar */
 .topnav a {
