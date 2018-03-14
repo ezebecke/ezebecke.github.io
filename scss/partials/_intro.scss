@@ -43,7 +43,7 @@
   @supports (display: grid) {
       display: grid;
       //grid-template-columns: minmax(4em, 1fr) minmax(auto, 30em) minmax(4em, 1fr);
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 100px;
     }
   }
 

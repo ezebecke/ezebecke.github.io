@@ -445,7 +445,7 @@ h2 {
   @supports (display: grid) {
     .intro {
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr; } }
+      grid-template-columns: 1fr 1fr 100px; } }
 
 .intro-middle {
   background: #111;
@@ -522,7 +522,7 @@ h2 {
     padding-left: 0; }
   .social li {
     text-align: center;
-    margin-right: 2em;
+    margin-right: 1.5em;
     margin-bottom: 3px !important;
     display: inline-block;
     font-size: 2em;
@@ -558,8 +558,7 @@ h2 {
 
 .portfolio {
   text-align: center;
-  background: #c5c5c5;
-  padding: 5em 0; }
+  background: #c5c5c5; }
 
 .portfolio-items {
   display: grid;
