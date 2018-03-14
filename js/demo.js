@@ -63,19 +63,20 @@
 
         // assign a circle to each point
         for(var i in points) {
-            var c = new Circle(points[i], 2+Math.random()*2, 'rgba(255,255,255,0.3)');
+            var c = new Circle(points[i], 1+Math.random()*1,6, 'rgba(255,255,255,0.3)');
             points[i].circle = c;
         }
     }
 
     // Event handling
+    /*
     function addListeners() {
         if(!('ontouchstart' in window)) {
             window.addEventListener('mousemove', mouseMove);
         }
         window.addEventListener('scroll', scrollCheck);
         window.addEventListener('resize', resize);
-    }
+    }*/
 
     function mouseMove(e) {
         var posx = posy = 0;
@@ -131,7 +132,7 @@
                     points[i].circle.active = 0;
                 }
 
-                drawLines(points[i]);
+                //drawLines(points[i]);
                 points[i].circle.draw();
             }
         }
