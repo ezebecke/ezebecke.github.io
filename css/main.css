@@ -558,11 +558,12 @@ h2 {
 
 .portfolio {
   text-align: center;
-  background: #c5c5c5; }
+  background: #111111;
+  padding: 2em 0; }
 
 .portfolio-items {
   display: grid;
-  height: 100%;
+  grid-gap: 5px;
   width: 90%;
   margin: 0 auto;
   max-width: 75em; }
@@ -573,7 +574,8 @@ h2 {
   flex: 1 1 20rem; }
   .portfolio-item .portfolio-image {
     display: block;
-    width: 100%; }
+    width: 100%;
+    height: 100%; }
   .portfolio-item figcaption {
     position: absolute;
     top: 100%;
@@ -593,11 +595,10 @@ h2 {
 
 .portfolio-title {
   color: #FFFFFF;
-  font-size: 2.5rem;
-  margin-bottom: auto; }
+  font-size: 2.5rem; }
 
-.portfolio-desc {
-  display: none; }
+.portfolio-title h2 {
+  margin-bottom: 0; }
 
 .portfolio-link {
   color: white;
@@ -739,7 +740,8 @@ h2 {
   max-width: 50em;
   padding: 5em 0; }
   .contact h1 {
-    text-align: center; }
+    text-align: center;
+    font-size: 2em; }
 
 form {
   display: flex;
@@ -765,7 +767,7 @@ form {
 label {
   display: block;
   margin-top: 1em;
-  color: #621b00; }
+  color: white; }
 
 input,
 textarea {
@@ -790,14 +792,15 @@ textarea {
   margin-left: auto;
   background: #945600;
   border: none;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   letter-spacing: 0.15em;
   color: #FFFFFF;
   text-transform: uppercase;
   line-height: 1;
   font-family: "Six Caps", sans-serif;
   font-weight: 400;
-  padding: .5em 1.5em; }
+  padding: .5em 1.5em;
+  cursor: pointer; }
 
 footer {
   background: #111;
