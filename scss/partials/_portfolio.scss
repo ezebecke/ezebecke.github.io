@@ -55,6 +55,21 @@
   margin-bottom: 0;
 }
 
+@media screen and (max-width: 600px) {
+//SCREEN SMALLS
+.portfolio-title {
+  //font-size: 2.5rem;
+}
+
+h2.portfolio-title {
+  margin-bottom: 5px;
+  font-size: 1.5em;
+}
+
+p.portfolio-desc {
+  font-size: 5pt;
+}
+}
 //.portfolio-desc {
   //display: none;
   //margin-bottom: auto;
@@ -80,10 +95,10 @@
 @supports (display: grid) {
   .portfolio-items {
     display: grid;
-    grid-template-columns: repeat(5, 1fr); //5 1
+    grid-template-columns: repeat(5, 1fr); 
 
     @include mq {
-      grid-template-columns: repeat(5, 1fr); // 5, 1
+      grid-template-columns: repeat(5, 1fr); 
       grid-template-rows: repeat(1, 1fr);
     }
   }
@@ -93,9 +108,9 @@
    
   }
   .large{
-    .portfolio-title {
-      font-size: 5rem;
-    }
+    //.portfolio-title {
+    //   font-size: 5rem;
+    //}
   
     .portfolio-desc {
       display: block;
