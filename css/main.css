@@ -757,14 +757,15 @@ h2 {
   100% {
     opacity: 0; } }
 
-.contain {
+.contactme {
   max-width: 1170px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 50px;
   padding: 1em; }
 
 @media (min-width: 600px) {
-  .contain {
+  .contactme {
     padding: 0; } }
 
 h3,
@@ -776,7 +777,7 @@ h3 {
 
 input:focus,
 textarea:focus {
-  outline: 3px solid gold; }
+  outline: 3px solid #945600; }
 
 input,
 textarea,
@@ -802,11 +803,12 @@ ul {
   padding: 0; }
 
 .contacts {
-  background: #4b5195;
-  color: #fff; }
+  background: black;
+  color: #ffffffb3; }
 
 .form {
-  background: #fff; }
+  background: black;
+  color: #ffffffb3; }
 
 form {
   display: grid;
@@ -833,8 +835,13 @@ button {
   border: 0; }
 
 button:hover, button:focus {
-  background: gold;
-  outline: 0; }
+  background: #945600;
+  outline: 0;
+  cursor: pointer; }
+
+.contactform input, .contactform textarea {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
 
 footer {
   background: #111;
