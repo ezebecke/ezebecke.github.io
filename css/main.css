@@ -844,28 +844,14 @@ button:hover, button:focus {
   box-sizing: border-box; }
 
 footer {
-  background: #111;
-  padding: 5em 0;
   text-align: center; }
-
-.social-icons {
-  width: 90%;
-  margin: 0 auto;
-  max-width: 15em;
-  display: flex;
-  justify-content: space-between;
-  margin: 1.75em auto 4em; }
-
-.social-icon {
-  width: 25%;
-  height: 25%; }
 
 .copyright::before {
   content: '';
   display: block;
   height: 1px;
   background: rgba(255, 255, 255, 0.15);
-  margin: 4em auto;
+  margin: 1em auto;
   width: 25%; }
 
 /* Add a black background color to the top navigation */
