@@ -5,7 +5,7 @@
     // Main
     initHeader();
     initAnimation();
-    addListeners();
+    //addListeners();
 
     function initHeader() {
         width = window.innerWidth;
