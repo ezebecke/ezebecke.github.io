@@ -860,6 +860,11 @@ button:hover, button:focus {
 #submit:hover {
   cursor: pointer; }
 
+.sendSubmit {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  color: blue; }
+
 footer {
   text-align: center; }
 
