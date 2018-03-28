@@ -106,11 +106,6 @@ button:hover, button:focus {
   cursor: pointer;
 }
 
-.sendSubmit {
-  margin-top: 100px;
-  margin-bottom: 100px;
-  color: blue;
-}
-.form {
-  background: white !important;
+#submit {
+  background-color: $accent;
 }
