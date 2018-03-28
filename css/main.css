@@ -653,8 +653,6 @@ h2 {
     display: block; }
   .portfolio-item.square {
     grid-column: span 2; }
-  .square .portfolio-title {
-    font-size: 5rem; }
   .square .portfolio-desc {
     display: block; } }
 
@@ -842,6 +840,9 @@ button:hover, button:focus {
 .contactform input, .contactform textarea {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
+
+#submit:hover {
+  cursor: pointer; }
 
 footer {
   text-align: center; }

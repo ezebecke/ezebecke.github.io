@@ -6,9 +6,7 @@
 }
 
 .portfolio-items {
-  display: grid; //flex
-  //flex-wrap: wrap;
-  //height: 100%;
+  display: grid; 
   grid-gap: 5px;
   @include container($max-width: 75em);
 }
@@ -48,7 +46,6 @@
 .portfolio-title {
   color: $white;
   font-size: 2.5rem;
-  //margin-bottom: auto;
 }
 
 .portfolio-title h2 {
@@ -57,9 +54,6 @@
 
 @media screen and (max-width: 600px) {
 //SCREEN SMALLS
-.portfolio-title {
-  //font-size: 2.5rem;
-}
 
 h2.portfolio-title {
   margin-bottom: 5px;
@@ -70,10 +64,6 @@ p.portfolio-desc {
   font-size: 5pt;
 }
 }
-//.portfolio-desc {
-  //display: none;
-  //margin-bottom: auto;
-//}
 
 .portfolio-link {
   color: white;
@@ -108,9 +98,6 @@ p.portfolio-desc {
    
   }
   .large{
-    //.portfolio-title {
-    //   font-size: 5rem;
-    //}
   
     .portfolio-desc {
       display: block;
@@ -122,10 +109,6 @@ p.portfolio-desc {
    
   }
   .square{
-    .portfolio-title {
-      font-size: 5rem;
-      
-    }
   
     .portfolio-desc {
       display: block;
@@ -226,19 +209,6 @@ p.portfolio-desc {
   height: 20vh;
   object-fit: cover;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 @include mq {
