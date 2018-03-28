@@ -865,6 +865,9 @@ button:hover, button:focus {
   margin-bottom: 100px;
   color: blue; }
 
+.form {
+  background: white; }
+
 footer {
   text-align: center; }
 
