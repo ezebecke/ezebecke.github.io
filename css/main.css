@@ -623,14 +623,20 @@ h2 {
     margin-bottom: 5px;
     font-size: 1.5em; }
   p.portfolio-desc {
-    font-size: 5pt; } }
+    font-size: 5pt; }
+  .portfolio-weblink {
+    font-size: 4pt !important; }
+  a.portfolio-link {
+    font-size: .875rem; } }
 
 .portfolio-weblink {
-  text-decoration: none;
   color: white;
   font-style: italic;
   font-size: 0.8rem;
-  margin-bottom: 1em; }
+  margin-bottom: 1em;
+  align-self: flex-start; }
+  .portfolio-weblink:hover {
+    cursor: pointer; }
 
 .portfolio-link {
   color: white;
@@ -703,10 +709,13 @@ h2 {
   background-position: center; }
 
 .header-one {
-  background-image: url(../img/portfolio-01.jpg); }
+  background-image: url(../../img/framebuilders.jpg); }
 
 .header-two {
   background-image: url(../img/portfolio-02.jpg); }
+
+.header-three {
+  background-image: url(../../img/news.png); }
 
 .portfolio-title-box {
   background: rgba(148, 86, 0, 0.75);

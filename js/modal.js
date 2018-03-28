@@ -1,11 +1,22 @@
+
+function openInNewTab(url) {
+  var win = window.open(url, '_blank');
+  win.focus();
+}
+
 const portfolioContainer = document.querySelector('.portfolio-items')
 
 portfolioContainer.addEventListener('click', e => {
-  // console.log(e)
+  //console.log(e)
   e.preventDefault()
 
+
+  const modalWeblink = e.target.closest('.portfolio-weblink')
+  console.log(modalWeblink)
+
+
   const modalToggle = e.target.closest('.portfolio-link')
-  // console.log(modalToggle)
+  //console.log(modalToggle)
   if (! modalToggle) return
 
   const modal = modalToggle.parentNode.nextElementSibling

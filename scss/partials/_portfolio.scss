@@ -63,14 +63,26 @@ h2.portfolio-title {
 p.portfolio-desc {
   font-size: 5pt;
 }
+
+.portfolio-weblink {
+  font-size: 4pt !important;
+}
+
+a.portfolio-link {
+  font-size: .875rem;
+}
 }
 
 .portfolio-weblink {
-  text-decoration: none;
   color: white;
   font-style: italic;
   font-size: 0.8rem;
   margin-bottom: 1em;
+  align-self: flex-start;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .portfolio-link {
@@ -171,11 +183,15 @@ p.portfolio-desc {
 }
 
 .header-one {
-  background-image: url(../img/portfolio-01.jpg);
+  background-image: url(../../img/framebuilders.jpg);
 }
 
 .header-two {
   background-image: url(../img/portfolio-02.jpg);
+}
+
+.header-three {
+  background-image: url(../../img/news.png);
 }
 
 .portfolio-title-box {
