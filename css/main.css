@@ -625,6 +625,13 @@ h2 {
   p.portfolio-desc {
     font-size: 5pt; } }
 
+.portfolio-weblink {
+  text-decoration: none;
+  color: white;
+  font-style: italic;
+  font-size: 0.8rem;
+  margin-bottom: 1em; }
+
 .portfolio-link {
   color: white;
   font-weight: 900;
