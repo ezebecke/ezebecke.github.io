@@ -619,6 +619,10 @@ h2 {
   margin-bottom: 0; }
 
 @media screen and (max-width: 600px) {
+  .portfolio-desc {
+    display: none !important; } }
+
+@media screen and (max-width: 600px) {
   h2.portfolio-title {
     margin-bottom: 5px;
     font-size: 1.5em; }

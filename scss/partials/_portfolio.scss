@@ -52,6 +52,14 @@
   margin-bottom: 0;
 }
 
+//add query yo delete description modal on smaller screens
+@media screen and (max-width: 600px) {
+
+  .portfolio-desc {
+    display: none !important;
+  }
+}
+
 @media screen and (max-width: 600px) {
 //SCREEN SMALLS
 
