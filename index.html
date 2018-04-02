@@ -79,11 +79,12 @@
       </figure>
 
       <!-- Portfolio item 2 square-->
-      <figure class="portfolio-item square">
-        <img class="portfolio-image" src="img/portfolio-02.jpg" alt="portfolio item">
+      <figure class="portfolio-item square appWeather">
+        <!--<img class="portfolio-image" src="img/weatherApp2.jpg" alt="portfolio item">-->
         <figcaption>
-          <h2 class="portfolio-title">Back-end projects</h2>
-          <p class="portfolio-desc">A short description could go right here</p>
+          <h2 class="portfolio-title">Weather App</h2>
+          <p class="portfolio-desc">Small Webapp that shows your weather using geolocation</p>
+          <div class="portfolio-weblink" onclick="openInNewTab('https://codepen.io/ezefreecoder/pen/bvRGJX?');">Visit pen!</div>
           <a href="#" class="portfolio-link">More info</a>
         </figcaption>
         <div class="portfolio-modal">
@@ -98,19 +99,15 @@
           </button>
           <div class="portfolio-header header-two">
             <div class="portfolio-title-box">
-              <h2 class="portfolio-title">Project Name 2</h2>    
-              <p class="portfolio-subtitle">Subtitle goes here</p>
+              <h2 class="portfolio-title">Weather App</h2>
+              <div class="portfolio-weblink" onclick="openInNewTab('https://codepen.io/ezefreecoder/pen/bvRGJX?');">Visit pen!</div>    
+              <p class="portfolio-subtitle">App that shows your current local weather</p>
             </div>
           </div> <!-- / portfolio-header -->
           <div class="portfolio-content">
-            <p>Aenean mattis tristique elementum. Duis massa tellus, tempus non fermentum at, venenatis et augue. Phasellus tristique purus sed sagittis interdum. Duis luctus sapien justo, vel viverra ex convallis et. Maecenas suscipit lacus ut lectus mattis ornare. Vestibulum faucibus purus sit amet erat lobortis, tristique fringilla leo sodales. Interdum et malesuada fames ac ante.</p>
-            <img class="portfolio-full-width" src="img/portfolio-02.jpg" alt="an image"> 
-            <p>Aenean mattis tristique elementum. Duis massa tellus, tempus non fermentum at, venenatis et augue. Phasellus tristique purus sed sagittis interdum. Duis luctus sapien justo, vel viverra ex convallis et. Maecenas suscipit lacus ut lectus mattis ornare. Vestibulum faucibus purus sit amet erat lobortis, tristique fringilla leo sodales. Interdum et malesuada fames ac ante.</p>
-            <p>Aenean mattis tristique elementum. Duis massa tellus, tempus non fermentum at, venenatis et augue. Phasellus tristique purus sed sagittis interdum. Duis luctus sapien justo, vel viverra ex convallis et. Maecenas suscipit lacus ut lectus mattis ornare. Vestibulum faucibus purus sit amet erat lobortis, tristique fringilla leo sodales. Interdum et malesuada fames ac ante.</p>
-            <img class="portfolio-pull-left" src="img/portfolio-02.jpg" alt="an image"> 
-            <p>Aenean mattis tristique elementum. Duis massa tellus, tempus non fermentum at, venenatis et augue. Phasellus tristique purus sed sagittis interdum. Duis luctus sapien justo, vel viverra ex convallis et. Maecenas suscipit lacus ut lectus mattis ornare. Vestibulum faucibus purus sit amet erat lobortis, tristique fringilla leo sodales. Interdum et malesuada fames ac ante.</p>
-            <p>Aenean mattis tristique elementum. Duis massa tellus, tempus non fermentum at, venenatis et augue. Phasellus tristique purus sed sagittis interdum. Duis luctus sapien justo, vel viverra ex convallis et. Maecenas suscipit lacus ut lectus mattis ornare. Vestibulum faucibus purus sit amet erat lobortis, tristique fringilla leo sodales. Interdum et malesuada fames ac ante.</p>
-            <img class="portfolio-pull-right" src="img/portfolio-02.jpg" alt="an image"> 
+            <p>In this project I combined a weather API and HTML5 Geolocation to obtain the user location.</p>
+            <img class="portfolio-full-width" src="img/weatherapp.jpg" alt="an image"> 
+            <p>Using Geolocation.getCurrentPosition() method I obtain the latitude and longitude where the device location is. With those two variables saved (lat and lon) We send a request to a external API, get a response and parse it as JSON. I also made a function that listen clicks on the button to convert Celsius to Fahrenheit.</p>
           </div>
         </div>
       </figure>

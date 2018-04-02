@@ -141,6 +141,11 @@ a.portfolio-link {
   background-size: cover;
 }
 
+.appWeather {
+  background-image: url(../img/weatherApp.JPG);
+  background-position: 50%;
+}
+
 .portfolio-modal {
   position: fixed;
   z-index: 10;
@@ -187,7 +192,7 @@ a.portfolio-link {
 }
 
 .header-two {
-  background-image: url(../img/portfolio-02.jpg);
+  background-image: url(../../img/weatherapp2.jpg);
 }
 
 .header-three {
