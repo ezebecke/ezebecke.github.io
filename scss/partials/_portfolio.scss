@@ -176,7 +176,7 @@ a.portfolio-link {
 .modal-close { 
   background: white;
   position: fixed;
-  left: 1em;
+  right: 3.5em;
   top: 1em;
   border: 0;
   width: 2em;
@@ -185,6 +185,14 @@ a.portfolio-link {
   border-radius: 50%;
   cursor: pointer;
   box-shadow: 0 0 5px rgba(black, .5);
+}
+
+@media screen and (max-width: 600px) {
+
+  .modal-close {
+    right: 2em;
+    top: 2em;
+  }
 }
 
 .portfolio-header {

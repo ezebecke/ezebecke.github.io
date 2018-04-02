@@ -699,7 +699,7 @@ h2 {
 .modal-close {
   background: white;
   position: fixed;
-  left: 1em;
+  right: 3.5em;
   top: 1em;
   border: 0;
   width: 2em;
@@ -708,6 +708,11 @@ h2 {
   border-radius: 50%;
   cursor: pointer;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); }
+
+@media screen and (max-width: 600px) {
+  .modal-close {
+    right: 2em;
+    top: 2em; } }
 
 .portfolio-header {
   text-align: left;
