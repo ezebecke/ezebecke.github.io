@@ -718,7 +718,8 @@ h2 {
   background-image: url(../../img/news.png); }
 
 .header-four {
-  background-image: url(../../img/jaxs.png); }
+  background-image: url(../../img/jaxs.png);
+  background-position: top; }
 
 .portfolio-title-box {
   background: rgba(148, 86, 0, 0.75);
