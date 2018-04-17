@@ -678,8 +678,10 @@ h2 {
   background-size: cover; }
 
 .appWeather {
-  background-image: url(../img/weatherApp.png);
-  background-position: 50%; }
+  background-image: url(../img/nailextension.jpg);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-color: white; }
 
 .portfolio-modal {
   position: fixed;
@@ -725,7 +727,7 @@ h2 {
   background-image: url(../../img/framebuilders.jpg); }
 
 .header-two {
-  background-image: url(../../img/weatherApp2.png); }
+  background-image: url(../../img/nailextension.jpg); }
 
 .header-three {
   background-image: url(../../img/news.png); }
