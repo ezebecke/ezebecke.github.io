@@ -4,20 +4,21 @@ body {
   line-height: 1.6;
   //background: $white;
   background: black;
-  font-size: .875rem;
-  overflow-x: hidden;  
+  font-size: 0.875rem;
+  overflow-x: hidden;
 
   @include mq {
     font-size: 1.125rem;
   }
 }
 
-
 img {
   max-width: 100%;
 }
 
-h1, h2, p {
+h1,
+h2,
+p {
   margin-top: 0;
   margin-bottom: 1em;
 }
@@ -39,4 +40,3 @@ h2 {
     font-size: 3rem;
   }
 }
-

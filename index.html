@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,248 +13,278 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenLite.min.js"></script>
 
 </head>
+
 <body>
 
   <div class="container-all">
 
-  <div class="topnav" id="myTopnav">
-    <a href="#home">Home</a>
-    <a href="#portfolio">Portfolio</a>
-    <a href="#contact">Contact</a>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-  </div>
-
-  <div class="welcome">
-    <div id="large-header" class="large-header">
-      <div id="home">
-        <h1 class="main-title">Ezequiel Becke</h1>
-        <span>Web Developer</span>
-        <canvas id="demo-canvas"></canvas>
-      </div>
+    <div class="topnav" id="myTopnav">
+      <a href="#home">Home</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
     </div>
-  </div>
 
-  <section class="portfolio" id="portfolio">
-    <h2>Work and Projects</h2>
-    <div class="portfolio-items">
-
-      <!-- Portfolio item 1 large-->
-      <figure class="portfolio-item large">
-        <img class="portfolio-image" src="img/framebuilders.jpg" alt="framebuilders project">
-        <figcaption>
-          <h2 class="portfolio-title">The Framebuilders</h2>
-          <p class="portfolio-desc">Built a responsive website from scratch using Mysql, PHP and Javascript with Google Maps and Instagram APIs that compiles information about custom bike framebuilders around the world.</p>
-          <div class="portfolio-weblink" onclick="openInNewTab('https://theframebuilders.com');">Visit site: TheFramebuilders.com</div>
-          <a href="#" class="portfolio-link">More info</a>
-        </figcaption>
-        
-        <!-- Portfolio modal 1 -->
-        <div class="portfolio-modal">
-          <button class="modal-close">
-            <svg x="0px" y="0px"
-              viewBox="0 0 30 17" height="17" width="30">
-              <g transform="translate(-15 -15)">
-              <polygon class="st0" points="31.2,23.5 37,29.3 35.8,30.5 30,24.7 24.2,30.5 23,29.3 28.8,23.5 23,17.7 24.2,16.5 30,22.3 
-              35.8,16.5 37,17.7 	"/>
-              </g>
-          </svg>
-          </button>
-          <div class="portfolio-header header-one">
-            <div class="portfolio-title-box">
-              <h2 class="portfolio-title">TheFramebuilders</h2>
-              <div class="portfolio-weblink" onclick="openInNewTab('https://theframebuilders.com');">Visit site: TheFramebuilders.com</div>
-              <p class="portfolio-subtitle">The site compiles information about custom bike framebuilders around the world and offers users the opportunity to discover information through interacting with a scalable world map.</p>
-            </div>
-          </div> <!-- / portfolio-header -->
-          <div class="portfolio-content">
-            <p>The website is designed and hand conded from scratch. The stack involved in this project are: PHP and MySQL in order to conect to the database, by using Google maps and Instagram APIs combined with Javascript I was able to show the data in a interactive way.</p>
-            <img class="portfolio-full-width" src="img/framebuilders.jpg" alt="an image"> 
-            <p>The design of the logo and the markers is made in photoshop and Adobe Illustrator. </p>
-            <img class="portfolio-pull-left" src="img/framebuilders.jpg" alt="an image"> 
-            <p>The site was created to help the framebuilding community and conect potential customers with small handcrafted bicycle companies. Potential customers are able to browse the different styles depending on the material that They prefer.</p>
-            <p>The framebuilding community have responded very enthusiastic about the project and I am continually maintaining the site and adding new framebuilders as they contact me.</p>
-            <!--<img class="portfolio-pull-right" src="img/framebuilders.jpg" alt="an image"> -->
-          </div>
-        </div>
-        <!-- /modal -->
-      </figure>
-
-      <!-- Portfolio item 2 square-->
-      <figure class="portfolio-item square appWeather">
-        <!--<img class="portfolio-image" src="img/weatherApp2.jpg" alt="portfolio item">-->
-        <figcaption>
-          <h2 class="portfolio-title">Chrome Extension App</h2>
-          <p class="portfolio-desc">Chrome Extension that keep track if you are biting your nails.</p>
-          <div class="portfolio-weblink" onclick="openInNewTab('https://github.com/ezebecke/Nail_ChromeExtension');">Code in Github!</div>
-          <a href="#" class="portfolio-link">More info</a>
-        </figcaption>
-        <div class="portfolio-modal">
-          <button class="modal-close">
-            <svg x="0px" y="0px"
-              viewBox="0 0 30 17" height="17" width="30">
-              <g transform="translate(-15 -15)">
-              <polygon class="st0" points="31.2,23.5 37,29.3 35.8,30.5 30,24.7 24.2,30.5 23,29.3 28.8,23.5 23,17.7 24.2,16.5 30,22.3 
-              35.8,16.5 37,17.7 	"/>
-              </g>
-            </svg>
-          </button>
-          <div class="portfolio-header header-two">
-            <div class="portfolio-title-box">
-              <h2 class="portfolio-title">Chrome Extension App</h2>
-              <div class="portfolio-weblink" onclick="openInNewTab('https://github.com/ezebecke/Nail_ChromeExtension');">Code in Github!</div>    
-              <p class="portfolio-subtitle">Chrome Extension that keep track if you are biting your nails.</p>
-            </div>
-          </div> <!-- / portfolio-header -->
-          <div class="portfolio-content">
-            <p>In this project I made a Chrome extension using Rich notifications API and Storage.</p>
-            <img class="portfolio-full-width" src="/img/nailextension.jpg" alt="an image"> 
-            <p>Using the notifications API I popup a interactive notifications every X amount of time where the user is asked if he is eating his nails. In case He is not, he will increase exp and eventually lvl up!</p>
-            <img class="portfolio-pull-left" src="img/nailextension2.jpg" alt="an image"> 
-          </div>
-        </div>
-      </figure>
-
-      <!-- Portfolio item 3  square-->
-      <figure class="portfolio-item square back"> 
-        <!--<img class="portfolio-image" src="img/news.png" alt="portfolio item">-->
-        <figcaption>
-          <h2 class="portfolio-title">Front-End Projects</h2>
-          <p class="portfolio-desc">A simple page using javaScirpt and CSS grid that converts a JSON to HTML and display up to 20 current news using newsAPI.org</p>
-          <div class="portfolio-weblink" onclick="openInNewTab('https://codepen.io/ezefreecoder/pen/ZrXoRP');">Visit pen!</div>
-          <a href="#" class="portfolio-link">More info</a>
-        </figcaption>
-        <div class="portfolio-modal">
-          <button class="modal-close">
-            <svg x="0px" y="0px"
-              viewBox="0 0 30 17" height="17" width="30">
-              <g transform="translate(-15 -15)">
-              <polygon class="st0" points="31.2,23.5 37,29.3 35.8,30.5 30,24.7 24.2,30.5 23,29.3 28.8,23.5 23,17.7 24.2,16.5 30,22.3 
-              35.8,16.5 37,17.7 	"/>
-              </g>
-            </svg>
-          </button>
-          <div class="portfolio-header header-three">
-            <div class="portfolio-title-box">
-              <h2 class="portfolio-title">News web app</h2>    
-              <div class="portfolio-weblink" onclick="openInNewTab('https://codepen.io/ezefreecoder/pen/ZrXoRP');">Visit pen!</div>
-              <p class="portfolio-subtitle">This project shows up to 20 of the latest news</p>
-            </div>
-          </div> <!-- / portfolio-header -->
-          <div class="portfolio-content">
-            <p>Every time the user clicks on "Get News" a new title comes up giving the posiblity to go to the source of the new if We click on the title. This is a quick example to show a responsive design and event handlers without needing Jquery and using plain Javascript.</p>
-            <img src="img/news.png" alt="an image"> 
-          </div>
-        </div>
-      </figure>
-
-      <!-- Portfolio item 4 large-->
-      <figure class="portfolio-item large">
-        <img class="portfolio-image" src="img/jaxs.png" alt="portfolio item">
-        <figcaption>
-          <h2 class="portfolio-title">JAX Cooking Studio</h2>
-          <p class="portfolio-desc">Wordpress site, customization of theme and plugins using PHP.</p>
-          <div class="portfolio-weblink" onclick="openInNewTab('https://jaxcookingstudio.com/');">Visit site: jaxcookingstudio.com</div>
-          <a href="#" class="portfolio-link">More info</a>
-        </figcaption>
-        <div class="portfolio-modal">
-          <button class="modal-close">
-            <svg x="0px" y="0px"
-              viewBox="0 0 30 17" height="17" width="30">
-              <g transform="translate(-15 -15)">
-              <polygon class="st0" points="31.2,23.5 37,29.3 35.8,30.5 30,24.7 24.2,30.5 23,29.3 28.8,23.5 23,17.7 24.2,16.5 30,22.3 
-              35.8,16.5 37,17.7 	"/>
-              </g>
-            </svg>
-          </button>
-          <div class="portfolio-header header-four">
-            <div class="portfolio-title-box">
-              <h2 class="portfolio-title">JAX Cooking Studio</h2>
-              <div class="portfolio-weblink" onclick="openInNewTab('https://jaxcookingstudio.com/');">Visit site: jaxcookingstudio.com</div>  
-              <p class="portfolio-subtitle">This is a WordPress E-commerce website for a cooking school business.</p>
-            </div>
-          </div> <!-- / portfolio-header -->
-          <div class="portfolio-content">
-            <p>Development of a WordPress E-commerce website and customization of plugins.</p>
-            <img class="portfolio-full-width" src="img/jaxs.png" alt="an image"> 
-            <p>Assisted with the development of a WordPress E-commerce website. Researched and presented options to client regarding payment gateways and resolved issues surrounding conflicts between server and plugins.</p>
-            <p>Provide overall technical support, as needed.</p>
-            <img class="portfolio-pull-left" src="img/captureJax.png" alt="an image"> 
-            <p>Fully customized Event-ticket and Woocommerce plugins.</p>
-           
-          </div>
-        </div>
-      </figure>
-    </div>
-  </section>
-
-  <section class="intro">
-    <div class="intro-left">
-      <div class="intro-icon"><i class="fas fa-rocket"></i></div>
-      <p>Support launching and deploying your website to the world</p>
-    </div>
-    <div class="intro-middle">
-      <div class="intro-icon"><i class="fas fa-cogs"></i></div>
-      <p>Problem solving, databases, server side code, fixing bugs, hosting</p>
-    </div>
-    <div class="intro-right">
-      <div class="intro-icon"><i class="fas fa-paint-brush"></i></div>
-      <p>Responsive designs. Experience with CMS and hand coding to create websites</p>
-    </div>
-  </section>
-
-  <div class="contactme" id="contact">
-    <div class="wrapper">
-      <div class="contacts">
-        <h3>About me:</h3>
-
-        <div class="about-text">
-          <p>I'm web developer with extensive experience in building Web applications or websites and a solid experience both in Front-end and Back-end Web development.</p>
-          <div class="social">
-            <ul>
-              <li>
-                <a href="https://linkedin.com/in/ezequiel-becke" title="LinkedIn" target="_blank" rel="nofollow"><i class="fab fa-linkedin"></i>
-                <span>LinkedIn</span>
-                </a>
-              </li>
-              <li>
-                <a href="https://github.com/ezebecke" title="GitHub" target="_blank" rel="nofollow"><i class="fab fa-github-square"></i>
-                <span>GitHub</span>
-                </a>
-              </li>
-            </ul>
-          </div>
+    <div class="welcome">
+      <div id="large-header" class="large-header">
+        <div id="home">
+          <h1 class="main-title">Ezequiel Becke</h1>
+          <span>Web Developer</span>
+          <canvas id="demo-canvas"></canvas>
         </div>
       </div>
-  
-      <div class="form">
-        <h3>Send me a message</h3>
-        <form action="https://formspree.io/ezequiel.becke@gmail.com" method="POST" class=contactform>
-          <p>
-            <label for="">Your name</label>
-            <input type="text" name="name">
-          </p>
-          <p>
-            <label for="">Email Address</label>
-            <input type="email" name="_replyto">
-          </p>
-          <p class="full-width">
-            <label for="">Write your message</label>
-            <textarea name="description" id="" cols="30" rows="7"></textarea>
-          </p>
-          <p class="full-width">
-            <input type="submit" value="Send" id="submit">
-          </p>
-        </form>
+    </div>
+
+    <section class="portfolio" id="portfolio">
+      <h2>Work and Projects</h2>
+      <div class="portfolio-items">
+
+        <!-- Portfolio item 1 large-->
+        <figure class="portfolio-item large">
+          <img class="portfolio-image" src="img/framebuilders.jpg" alt="framebuilders project">
+          <figcaption>
+            <h2 class="portfolio-title">The Framebuilders</h2>
+            <p class="portfolio-desc">Built a responsive website from scratch using Mysql, PHP and Javascript with Google Maps and Instagram APIs that
+              compiles information about custom bike framebuilders around the world.</p>
+            <div class="portfolio-weblink" onclick="openInNewTab('https://theframebuilders.com');">Visit site: TheFramebuilders.com</div>
+            <a href="#" class="portfolio-link">More info</a>
+          </figcaption>
+
+          <!-- Portfolio modal 1 -->
+          <div class="portfolio-modal">
+            <button class="modal-close">
+              <svg x="0px" y="0px" viewBox="0 0 30 17" height="17" width="30">
+                <g transform="translate(-15 -15)">
+                  <polygon class="st0" points="31.2,23.5 37,29.3 35.8,30.5 30,24.7 24.2,30.5 23,29.3 28.8,23.5 23,17.7 24.2,16.5 30,22.3 
+              35.8,16.5 37,17.7 	" />
+                </g>
+              </svg>
+            </button>
+            <div class="portfolio-header header-one">
+              <div class="portfolio-title-box">
+                <h2 class="portfolio-title">TheFramebuilders</h2>
+                <div class="portfolio-weblink" onclick="openInNewTab('https://theframebuilders.com');">Visit site: TheFramebuilders.com</div>
+                <p class="portfolio-subtitle">The site compiles information about custom bike framebuilders around the world and offers users the opportunity
+                  to discover information through interacting with a scalable world map.</p>
+              </div>
+            </div>
+            <!-- / portfolio-header -->
+            <div class="portfolio-content">
+              <p>The website is designed and hand conded from scratch. The stack involved in this project are: PHP and MySQL
+                in order to conect to the database, by using Google maps and Instagram APIs combined with Javascript I was
+                able to show the data in a interactive way.</p>
+              <img class="portfolio-full-width" src="img/framebuilders.jpg" alt="an image">
+              <p>The design of the logo and the markers is made in photoshop and Adobe Illustrator. </p>
+              <img class="portfolio-pull-left" src="img/framebuilders.jpg" alt="an image">
+              <p>The site was created to help the framebuilding community and conect potential customers with small handcrafted
+                bicycle companies. Potential customers are able to browse the different styles depending on the material
+                that They prefer.</p>
+              <p>The framebuilding community have responded very enthusiastic about the project and I am continually maintaining
+                the site and adding new framebuilders as they contact me.</p>
+              <!--<img class="portfolio-pull-right" src="img/framebuilders.jpg" alt="an image"> -->
+            </div>
+          </div>
+          <!-- /modal -->
+        </figure>
+
+        <!-- Portfolio item 2 square-->
+        <figure class="portfolio-item square appWeather">
+          <!--<img class="portfolio-image" src="img/weatherApp2.jpg" alt="portfolio item">-->
+          <figcaption>
+            <h2 class="portfolio-title">Chrome Extension App</h2>
+            <p class="portfolio-desc">Chrome Extension that keep track if you are biting your nails.</p>
+            <div class="portfolio-weblink" onclick="openInNewTab('https://github.com/ezebecke/Nail_ChromeExtension');">Code in Github!</div>
+            <a href="#" class="portfolio-link">More info</a>
+          </figcaption>
+          <div class="portfolio-modal">
+            <button class="modal-close">
+              <svg x="0px" y="0px" viewBox="0 0 30 17" height="17" width="30">
+                <g transform="translate(-15 -15)">
+                  <polygon class="st0" points="31.2,23.5 37,29.3 35.8,30.5 30,24.7 24.2,30.5 23,29.3 28.8,23.5 23,17.7 24.2,16.5 30,22.3 
+              35.8,16.5 37,17.7 	" />
+                </g>
+              </svg>
+            </button>
+            <div class="portfolio-header header-two">
+              <div class="portfolio-title-box">
+                <h2 class="portfolio-title">Chrome Extension App</h2>
+                <div class="portfolio-weblink" onclick="openInNewTab('https://github.com/ezebecke/Nail_ChromeExtension');">Code in Github!</div>
+                <p class="portfolio-subtitle">Chrome Extension that keep track if you are biting your nails.</p>
+              </div>
+            </div>
+            <!-- / portfolio-header -->
+            <div class="portfolio-content">
+              <p>In this project I made a Chrome extension using Rich notifications API and Storage.</p>
+              <img class="portfolio-full-width" src="/img/nailextension.jpg" alt="an image">
+              <p>Using the notifications API I popup a interactive notifications every X amount of time where the user is asked
+                if he is eating his nails. In case He is not, he will increase exp and eventually lvl up!</p>
+              <img class="portfolio-pull-left" src="img/nailextension2.jpg" alt="an image">
+            </div>
+          </div>
+        </figure>
+
+        <!-- Portfolio item 3  square-->
+        <figure class="portfolio-item square back">
+          <!--<img class="portfolio-image" src="img/news.png" alt="portfolio item">-->
+          <figcaption>
+            <h2 class="portfolio-title">Front-End Projects</h2>
+            <p class="portfolio-desc">A simple page using javaScirpt and CSS grid that converts a JSON to HTML and display up to 20 current news using
+              newsAPI.org</p>
+            <div class="portfolio-weblink" onclick="openInNewTab('https://codepen.io/ezefreecoder/pen/ZrXoRP');">Visit pen!</div>
+            <a href="#" class="portfolio-link">More info</a>
+          </figcaption>
+          <div class="portfolio-modal">
+            <button class="modal-close">
+              <svg x="0px" y="0px" viewBox="0 0 30 17" height="17" width="30">
+                <g transform="translate(-15 -15)">
+                  <polygon class="st0" points="31.2,23.5 37,29.3 35.8,30.5 30,24.7 24.2,30.5 23,29.3 28.8,23.5 23,17.7 24.2,16.5 30,22.3 
+              35.8,16.5 37,17.7 	" />
+                </g>
+              </svg>
+            </button>
+            <div class="portfolio-header header-three">
+              <div class="portfolio-title-box">
+                <h2 class="portfolio-title">News web app</h2>
+                <div class="portfolio-weblink" onclick="openInNewTab('https://codepen.io/ezefreecoder/pen/ZrXoRP');">Visit pen!</div>
+                <p class="portfolio-subtitle">This project shows up to 20 of the latest news</p>
+              </div>
+            </div>
+            <!-- / portfolio-header -->
+            <div class="portfolio-content">
+              <p>Every time the user clicks on "Get News" a new title comes up giving the posiblity to go to the source of the
+                new if We click on the title. This is a quick example to show a responsive design and event handlers without
+                needing Jquery and using plain Javascript.</p>
+              <img src="img/news.png" alt="an image">
+            </div>
+            <h2>Weather App</h2>
+            <p>In this project I combined a weather API and HTML5 Geolocation to obtain the user location.</p>
+            <div class="portfolio-weblink" style="color: #5f5858;" onclick="openInNewTab('https://codepen.io/ezefreecoder/pen/bvRGJX?');">Visit pen!</div>
+            <img src="/img/weatherApp2.png" alt="weatherApp">
+            <p>Using Geolocation.getCurrentPosition() method I obtain the latitude and longitude where the device location is.
+              With those two variables saved (lat and lon) We send a request to a external API, get a response and parse
+              it as JSON. I also made a function that listen clicks on the button to convert Celsius to Fahrenheit.</p>
+          </div>
+        </figure>
+
+        <!-- Portfolio item 4 large-->
+        <figure class="portfolio-item large">
+          <img class="portfolio-image" src="img/jaxs.png" alt="portfolio item">
+          <figcaption>
+            <h2 class="portfolio-title">JAX Cooking Studio</h2>
+            <p class="portfolio-desc">Wordpress site, customization of theme and plugins using PHP.</p>
+            <div class="portfolio-weblink" onclick="openInNewTab('https://jaxcookingstudio.com/');">Visit site: jaxcookingstudio.com</div>
+            <a href="#" class="portfolio-link">More info</a>
+          </figcaption>
+          <div class="portfolio-modal">
+            <button class="modal-close">
+              <svg x="0px" y="0px" viewBox="0 0 30 17" height="17" width="30">
+                <g transform="translate(-15 -15)">
+                  <polygon class="st0" points="31.2,23.5 37,29.3 35.8,30.5 30,24.7 24.2,30.5 23,29.3 28.8,23.5 23,17.7 24.2,16.5 30,22.3 
+              35.8,16.5 37,17.7 	" />
+                </g>
+              </svg>
+            </button>
+            <div class="portfolio-header header-four">
+              <div class="portfolio-title-box">
+                <h2 class="portfolio-title">JAX Cooking Studio</h2>
+                <div class="portfolio-weblink" onclick="openInNewTab('https://jaxcookingstudio.com/');">Visit site: jaxcookingstudio.com</div>
+                <p class="portfolio-subtitle">This is a WordPress E-commerce website for a cooking school business.</p>
+              </div>
+            </div>
+            <!-- / portfolio-header -->
+            <div class="portfolio-content">
+              <p>Development of a WordPress E-commerce website and customization of plugins.</p>
+              <img class="portfolio-full-width" src="img/jaxs.png" alt="an image">
+              <p>Assisted with the development of a WordPress E-commerce website. Researched and presented options to client
+                regarding payment gateways and resolved issues surrounding conflicts between server and plugins.</p>
+              <p>Provide overall technical support, as needed.</p>
+              <img class="portfolio-pull-left" src="img/captureJax.png" alt="an image">
+              <p>Fully customized Event-ticket and Woocommerce plugins.</p>
+
+            </div>
+          </div>
+        </figure>
+      </div>
+    </section>
+
+    <section class="intro">
+      <div class="intro-left">
+        <div class="intro-icon">
+          <i class="fas fa-rocket"></i>
+        </div>
+        <p>Support launching and deploying your website to the world</p>
+      </div>
+      <div class="intro-middle">
+        <div class="intro-icon">
+          <i class="fas fa-cogs"></i>
+        </div>
+        <p>Problem solving, databases, server side code, fixing bugs, hosting</p>
+      </div>
+      <div class="intro-right">
+        <div class="intro-icon">
+          <i class="fas fa-paint-brush"></i>
+        </div>
+        <p>Responsive designs. Experience with CMS and hand coding to create websites</p>
+      </div>
+    </section>
+
+    <div class="contactme" id="contact">
+      <div class="wrapper">
+        <div class="contacts">
+          <h3>About me:</h3>
+
+          <div class="about-text">
+            <p>I'm web developer with extensive experience in building Web applications or websites and a solid experience both
+              in Front-end and Back-end Web development.</p>
+            <div class="social">
+              <ul>
+                <li>
+                  <a href="https://linkedin.com/in/ezequiel-becke" title="LinkedIn" target="_blank" rel="nofollow">
+                    <i class="fab fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://github.com/ezebecke" title="GitHub" target="_blank" rel="nofollow">
+                    <i class="fab fa-github-square"></i>
+                    <span>GitHub</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="form">
+          <h3>Send me a message</h3>
+          <form action="https://formspree.io/ezequiel.becke@gmail.com" method="POST" class=contactform>
+            <p>
+              <label for="">Your name</label>
+              <input type="text" name="name">
+            </p>
+            <p>
+              <label for="">Email Address</label>
+              <input type="email" name="_replyto">
+            </p>
+            <p class="full-width">
+              <label for="">Write your message</label>
+              <textarea name="description" id="" cols="30" rows="7"></textarea>
+            </p>
+            <p class="full-width">
+              <input type="submit" value="Send" id="submit">
+            </p>
+          </form>
+        </div>
       </div>
     </div>
+
+    <footer>
+      <p class="copyright">Copyright 2018 Ezequiel Becke</p>
+    </footer>
   </div>
 
-  <footer>  
-    <p class="copyright">Copyright 2018 Ezequiel Becke</p>
-  </footer>
-</div>
+  <script src="js/nav.js"></script>
+  <script src="js/modal.js"></script>
+</body>
 
-<script src="js/nav.js"></script>
-<script src="js/modal.js"></script>
-</body> 
 </html>

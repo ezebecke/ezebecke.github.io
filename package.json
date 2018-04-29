@@ -8,14 +8,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kevin-powell/portfolio-with-css-grid.git"
+    "url": "git+https://github.com/ezebecke/ezebecke.github.io.git"
   },
-  "author": "Kevin Powell",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/kevin-powell/portfolio-with-css-grid/issues"
-  },
-  "homepage": "https://github.com/kevin-powell/portfolio-with-css-grid#readme",
+  "author": "Ezequiel Becke",
   "devDependencies": {
     "browser-sync": "^2.18.13",
     "gulp": "^3.9.1",
