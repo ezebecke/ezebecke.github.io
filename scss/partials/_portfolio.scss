@@ -51,7 +51,7 @@
   margin-bottom: 0;
 }
 
-//add query yo delete description modal on smaller screens
+//add query to delete description modal on smaller screens
 @media screen and (max-width: 600px) {
   .portfolio-desc {
     display: none !important;
@@ -198,6 +198,7 @@
   background-position: center;
 }
 
+//head of modal
 .header-one {
   background-image: url(../../img/framebuilders.jpg);
 }
@@ -268,7 +269,7 @@
     margin-left: 2em;
   }
 }
-
+//In order to hide and show modal
 @keyframes modalIn {
   0% {
     opacity: 0;
