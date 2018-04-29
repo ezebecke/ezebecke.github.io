@@ -10,20 +10,6 @@
     font-size: 40px;
     color: $accent;
   }
-  /*
-   h2 {
-     //color: $white;
-     color: aqua;
-
-     &::after {
-       content: '';
-       width: 20%;
-       height: 1px;
-       background: rgba($white, .5);
-       display: block;
-       margin: 1em auto 0
-     }
-   }*/
 
   p {
     &::before {
