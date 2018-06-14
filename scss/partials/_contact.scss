@@ -58,6 +58,10 @@ ul {
   color: #ffffffb3;
 }
 
+.social ul {
+  text-align: center;
+}
+
 .form {
   background: black;
   color: #ffffffb3;
@@ -105,8 +109,14 @@ button:focus {
 
 #submit:hover {
   cursor: pointer;
+  background-color: #000;
+  color: #945600;
 }
 
 #submit {
   background-color: $accent;
+  border: 2px #945600;
+  border-style: double;
+  -webkit-transition: width 2s;
+  transition: background 1s;
 }
