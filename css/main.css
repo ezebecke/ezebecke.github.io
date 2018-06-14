@@ -450,6 +450,13 @@ h2 {
   flex-direction: column;
   justify-content: center; }
 
+@media only screen and (max-width: 699px) {
+  .about-text img {
+    max-width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; } }
+
 .social {
   margin: 0;
   padding: 0; }
@@ -458,7 +465,7 @@ h2 {
     padding-left: 0; }
   .social li {
     text-align: center;
-    margin-right: 1.5em;
+    margin-right: 1em;
     margin-bottom: 3px !important;
     display: inline-block;
     font-size: 2em;
