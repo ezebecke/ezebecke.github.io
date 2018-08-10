@@ -584,19 +584,21 @@ h2 {
 @supports (display: grid) {
   .portfolio-items {
     display: grid;
-    grid-template-columns: repeat(5, 1fr); }
+    grid-template-columns: repeat(6, 1fr); }
     @media (min-width: 50em) {
       .portfolio-items {
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: repeat(6, 1fr);
         grid-template-rows: repeat(1, 1fr); } }
   .portfolio-item.large {
-    grid-column: span 3; }
+    grid-column: span 4; }
   .large .portfolio-desc {
     display: block; }
   .portfolio-item.square {
     grid-column: span 2; }
   .square .portfolio-desc {
-    display: block; } }
+    display: block; }
+  .portfolio-item.medium {
+    grid-column: span 3; } }
 
 .back {
   background-image: url(../img/news.png);

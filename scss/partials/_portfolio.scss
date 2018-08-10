@@ -111,16 +111,16 @@
 @supports (display: grid) {
   .portfolio-items {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);
 
     @include mq {
-      grid-template-columns: repeat(5, 1fr);
+      grid-template-columns: repeat(6, 1fr);
       grid-template-rows: repeat(1, 1fr);
     }
   }
 
   .portfolio-item.large {
-    grid-column: span 3;
+    grid-column: span 4;
   }
   .large {
     .portfolio-desc {
@@ -135,6 +135,10 @@
     .portfolio-desc {
       display: block;
     }
+  }
+
+  .portfolio-item.medium {
+    grid-column: span 3;
   }
 }
 
