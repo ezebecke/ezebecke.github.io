@@ -551,12 +551,15 @@ h2 {
   h2.portfolio-title {
     margin-bottom: 5px;
     font-size: 1.5em !important; }
+  h2.title-medium {
+    margin-bottom: 5px;
+    font-size: 0.7em !important; }
   p.portfolio-desc {
     font-size: 5pt; }
   .portfolio-weblink {
     font-size: 4pt !important; }
   a.portfolio-link {
-    font-size: 0.875rem; } }
+    font-size: 0.670rem; } }
 
 .portfolio-weblink {
   color: white;
